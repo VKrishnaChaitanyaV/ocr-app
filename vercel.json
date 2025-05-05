@@ -1,0 +1,10 @@
+{
+    "builds": [
+      { "src": "pages/api/ocr.js", "use": "@vercel/node" },
+      { "src": "next.config.js", "use": "@vercel/next" }
+    ],
+    "routes": [
+      { "src": "/api/ocr", "dest": "/api/ocr.js" }
+    ]
+  }
+  
